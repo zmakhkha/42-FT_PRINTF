@@ -1,5 +1,5 @@
 NAME = libftprintf.a
-SRC = ft_printf_utils.c		ft_printf.c		libft_utils.c
+SRC = ft_printf_utils.c		ft_printf.c		libft_utils.c ft_calloc.c
 
 OBJ = $(SRC:.c=.o)
 

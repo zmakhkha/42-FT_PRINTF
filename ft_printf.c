@@ -6,7 +6,7 @@
 /*   By: zmakhkha <zmakhkha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 12:11:12 by zmakhkha          #+#    #+#             */
-/*   Updated: 2022/12/10 21:46:07 by zmakhkha         ###   ########.fr       */
+/*   Updated: 2022/12/11 10:06:47 by zmakhkha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_check(char c, int *len, va_list args)
 	else if (c == 'p')
 	{
 		ft_putstr_len("0x", len);
-		ft_dec_to_hex_ptr(va_arg(args, unsigned long int), 0, len);
+		ft_dec_to_hex_ptr(va_arg(args, unsigned long int), len);
 	}
 	else if (c == 'x')
 		ft_dec_to_hex(va_arg(args, unsigned int), 0, len);
